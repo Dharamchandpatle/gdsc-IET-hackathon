@@ -4,102 +4,165 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GDSC IET DAVV </title>
-    <!-- css link  -->
+    <title>GDSC IET DAVV</title>
     <link rel="stylesheet" href="style.css" />
-    <!-- Link Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- --- Animation Cdn link ----  -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Add smooth scroll behavior -->
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .hover-scale {
+            transition: transform 0.3s ease;
+        }
+
+        .hover-scale:hover {
+            transform: scale(1.02);
+        }
+    </style>
 </head>
 
-<body>
-    <html lang="en">
+<body class="overflow-x-hidden">
+    <!-- Header Section -->
+    <!-- <section class="flex justify-center items-center py-4 bg-white border-2 border-b shadow-lg animate-fadeIn">
+        <h3 class=" text-black font-bold ">Connect with members of GDG IET DAVV</h3>
+    </section> -->
+    <nav class="navbar">
+        <div class="image1">
+            <img src="https://gdsc.ietdavv.edu.in/logo.svg">
+        </div>
+        <div class="work">
+            <div class="Home">Home</div>
+            <div class="Past-Ocs">Past Ocs</div>
+            <div class="Events">Events</div>
+            <div class="Projects">Projects</div>
+        </div>
+        <div>
+            <a href="https://developers.google.com/community"  >
+            <button class="p-2 text-[0.9rem] "  >
+                Connect with Community   &#8594;
+            </button></a>
+        </div>
+    </nav>
+    <!-- Hero Section -->
+    <section data-aos="fade-up" class=" py-4 ">
+        <img src="https://developers.google.com/static/community/images/community-hero.png" alt="Hero Image" class="w-full">
+    </section>
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>About the Communities</title>
-        <script src="https://cdn.tailwindcss.com"></script>
-    </head>
+    <!-- Description Section -->
+    <section class="flex justify-center items-center py-8" data-aos="fade-up" data-aos-delay="100">
+        <p class="max-w-[80ch] font-">Learn practical AI skills at a Build with AI event, led by local Google Developer
+            Groups. Get hands-on
+            experience, hear
+            from experts, and build AI applications to solve real-world problems.</p>
+    </section>
 
-    <body class="bg-gray-100">
-
-        <!-- ----------- About to community start  -------------------  -->
-        <div class="max-w-9xl mx-auto px-9 py-2" >
-            <h1 class="text-3xl font-bold mb-6">About the communities</h1>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div class=" bg-white rounded-lg shadow-lg"data-aos="fade-up" data-aos-delay="100" data-aos-duration="800">
-                    <div class="bg-pink-100">
-                        <img src="assets/about-red_960.png" alt="Illustration of Google Developer Groups"
-                            class="mx-auto mb-4 py-8  max-width[600px]  max-width-[840px] ">
-                    </div>
-                    <div class="px-6 py-2">
-                        <h2 class="text-[1.1rem] font-semibold mb-2">Google Developer Groups</h2>
-                        <p class="text-gray-700 text-[0.8rem] ">
-                            Google Developer Groups (GDGs) bring together developers and technologists to connect,
-                            learn, and grow alongside Google's technologies and experts. These groups support innovation
-                            and growth in the tech world by providing opportunities to learn, share knowledge, and
-                            collaborate. Some GDGs focus on specific subject areas, like applying technology to fields
-                            such as science, providing a space for developers with specialized interests to connect and
-                            collaborate.
-                        </p>
-                    </div>
-
-                </div>
-                <div class=" bg-white rounded-lg shadow-lg"data-aos="fade-up" data-aos-delay="100" data-aos-duration="800">
-                    <div class="bg-green-100">
-                        <img src="assets/about-green_960.png" alt="Illustration of Google Developer Groups"
-                            class="mx-auto mb-4 py-8">
-                    </div>
-                   <div class="px-6 py-2">
-                    <h2 class="text-[1.1rem] font-semibold mb-2">Google Developer Groups on Campus</h2>
-                    <p class="text-gray-700 text-[0.8rem]">
-                        GDGs on Campus provide learning opportunities for aspiring developers from universities and
-                        colleges around the world, allowing them to gain hands-on experience, develop essential skills,
-                        and build a strong foundation for a tech career. After graduating, GDGs on Campus members can
-                        seamlessly transition to a broader GDG community, continuing their learning and collaboration
-                        with fellow developers.
-                    </p>
-                   </div>
-                </div>
-            </div>
+    <!-- Campus Section -->
+    <section data-aos="fade-up" data-aos-delay="150">
+        <div class="flex justify-center py-4 ">
+            <h1 class="font-extrabold max-w-[36ch] text-3xl text-center px-5">Explore what the Campus has to offer</h1>
         </div>
 
-        <!-- ----------- About to community end   -------------------  -->
+        <div class="w-full flex">
+            <div class="w-1/3 px-4 flex flex-col justify-center relative">
+                <p class="text-sm text-h">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta,
+                    voluptates ab
+                    assumenda,
+                    molestias
+                    eligendi vero quidem quod sapiente ut ratione quibusdam illum laboriosam esse cum suscipit excepturi
+                    quae nisi dolor veniam! Animi, sed? Veritatis voluptatem atque eum ad molestiae tempore? Lorem ipsum
+                    dolor sit amet consectetur adipisicing elit. Quo ea voluptatum illum numquam accusantium! Eveniet
+                    sint animi exercitationem possimus obcaecati.</p>
+
+                <a href="https://developers.google.com/events" ><button class="px-5 font-semibold mt-4 py-2 rounded-lg border-gray-600 border-2 text-blue-500 text-sm font-light ">
+                        Learn
+                        more
+                    </button></a>
+            </div>
+            <div class="w-2/3 h-[400px] bg-gray-200 rounded-xl overflow-clip">
+                <img src="assets/event-01.png" alt="" class="rounded-2xl">
+            </div>
+        </div>
+    </section>
+<!-- ----------- About to community start  -------------------  -->
+<!-- 
+<div class="max-w-9xl mx-auto px-9 py-2">
+    <h1 class="text-3xl font-bold mb-6">About the communities</h1>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+  
+      <div class="bg-white rounded-lg shadow-lg" data-aos="fade-up" data-aos-delay="100" data-aos-duration="800">
+        <div class="bg-pink-100">
+          <img src="assets/about-red_960.png" alt="Illustration of Google Developer Groups"
+            class="mx-auto mb-4 py-8 w-full max-w-[300px] md:max-w-[400px]">
+        </div>
+        <div class="px-6 py-2">
+          <h2 class="text-[1.1rem] font-semibold mb-2">Google Developer Groups</h2>
+          <p class="text-gray-700 text-[0.8rem]">
+            Google Developer Groups (GDGs) bring together developers and technologists to connect, learn, and grow
+            alongside Google's technologies and experts. These groups support innovation and growth in the tech world by
+            providing opportunities to learn, share knowledge, and collaborate. Some GDGs focus on specific subject areas,
+            like applying technology to fields such as science, providing a space for developers with specialized interests
+            to connect and collaborate.
+          </p>
+          <button type="button" class="border-2 border-solid text-[0.8rem] text-blue-700 px-5 py-2  my-4 ">join now</button>
+
+        </div>
+      </div>
+  
+      <div class="bg-white rounded-lg shadow-lg" data-aos="fade-up" data-aos-delay="100" data-aos-duration="800">
+        <div class="bg-green-100">
+          <img src="assets/about-green_960.png" alt="Illustration of Google Developer Groups on Campus"
+            class="mx-auto mb-4 py-8 w-full max-w-[300px] md:max-w-[400px]">
+        </div>
+        <div class="px-6 py-2">
+          <h2 class="text-[1.1rem] font-semibold mb-2">Google Developer Groups on Campus</h2>
+          <p class="text-gray-700 text-[0.8rem]">
+            GDGs on Campus provide learning opportunities for aspiring developers from universities and colleges around the
+            world, allowing them to gain hands-on experience, develop essential skills, and build a strong foundation for a
+            tech career. After graduating, GDGs on Campus members can seamlessly transition to a broader GDG community,
+            continuing their learning and collaboration with fellow developers.
+          </p>
+          <button type="button" class="border-2 border-solid text-[0.8rem] text-blue-700 px-5 py-2  my-4 ">join now  </button>
+
+        </div>
+      </div>
+  
+    </div>
+  </div> -->
+  
+  <!-- ----------- About to community end   -------------------  -->
+  
 
 
-
-        <!-- ----------- About to community start  -------------------  -->
-        <div class="max-w-9xl  mx-auto px-9 py-2" >
-            <h1 class="text-3xl font-bold mb-6 pt-9 ">Additional communities and programs</h1>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div class=" rounded-lg shadow-lg bg-white" data-aos="fade-up" data-aos-delay="50" data-aos-duration="800">
-                    <div class="bg-pink-100">
-                        <img src="https://developers.google.com/static/community/images/wtm_720.png" alt="Illustration of Google Developer Groups"
-                            class="mx-auto mb-4 py-8  max-width[600px]  max-width-[840px] ">
-                    </div>
-                    <div class="px-6 py-2">
-                        <h2 class="text-[1.1rem] font-semibold mb-2">bg-pink-100</h2>
-                        <p class="text-gray-700 text-[0.8rem] ">
-                            Google Developer Groups (GDGs) bring together developers and technologists to connect,
-                            learn, and grow alongside Google's technologies and experts. These groups support innovation
-                            and growth in the tech world by providing opportunities to learn, share knowledge, and
-                            collaborate. Some GDGs focus on specific subject areas, like applying technology to fields
-                            such as science, providing a space for developers with specialized interests to connect and
-                            collaborate.
-                        </p>
-                        <button type="button" class="border-2 border-solid text-[0.8rem] text-blue-700 px-5 py-2  my-4 " >Learn More </button>
-                    </div>
-
+    <!-- Communities Section -->
+    <div class="max-w-9xl mx-auto px-9 py-2">
+        <h1 class="text-3xl font-bold mb-6 pt-9" data-aos="fade-up">Additional communities and programs</h1>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Update each card with hover effect and proper animation -->
+            <div class="rounded-lg shadow-lg bg-white hover-scale" data-aos="fade-up" data-aos-delay="50">
+                <div class="bg-pink-100">
+                    <img src="https://developers.google.com/static/community/images/wtm_720.png" alt="Illustration of Google Developer Groups" class="mx-auto mb-4 py-8  max-width[600px]  max-width-[840px] ">
                 </div>
-
-                <div class=" rounded-lg shadow-lg bg-white" data-aos="fade-up" data-aos-delay="50" data-aos-duration="800">
-                    <div class="bg-green-100">
-                        <img src="https://developers.google.com/static/community/images/gde_720.png" alt="Illustration of Google Developer Groups"
-                            class="mx-auto mb-4 py-8">
-                    </div>
-                   <div class="px-6 py-2">
+                <div class="px-6 py-2">
+                    <h2 class="text-[1.1rem] font-semibold mb-2">bg-pink-100</h2>
+                    <p class="text-gray-700 text-[0.8rem] ">
+                        Google Developer Groups (GDGs) bring together developers and technologists to connect,
+                        learn, and grow alongside Google's technologies and experts. These groups support innovation
+                        and growth in the tech world by providing opportunities to learn, share knowledge, and
+                        collaborate. Some GDGs focus on specific subject areas, like applying technology to fields
+                        such as science, providing a space for developers with specialized interests to connect and
+                        collaborate.
+                    </p>
+                    <button type="button" class="border-2 border-solid text-[0.8rem] text-blue-700 px-5 py-2  my-4 ">Learn More </button>
+                </div>
+            </div>
+            <div class="rounded-lg shadow-lg bg-white hover-scale" data-aos="fade-up" data-aos-delay="50">
+                <div class="bg-green-100">
+                    <img src="https://developers.google.com/static/community/images/gde_720.png" alt="Illustration of Google Developer Groups" class="mx-auto mb-4 py-8">
+                </div>
+                <div class="px-6 py-2">
                     <h2 class="text-[1.1rem] font-semibold mb-2">Google Developer Experts</h2>
                     <p class="text-gray-700 text-[0.8rem]">
                         GDGs on Campus provide learning opportunities for aspiring developers from universities and
@@ -108,17 +171,14 @@
                         seamlessly transition to a broader GDG community, continuing their learning and collaboration
                         with fellow developers.
                     </p>
-                    <button type="button" class="border-2 border-solid text-[0.8rem] text-blue-700 px-5 py-2  my-4 " >Learn More </button>
-
-                   </div>
+                    <button type="button" class="border-2 border-solid text-[0.8rem] text-blue-700 px-5 py-2  my-4 ">Learn More </button>
                 </div>
-
-                <div class=" rounded-lg shadow-lg bg-white" data-aos="fade-up" data-aos-delay="50" data-aos-duration="800">
-                    <div class="bg-pink-100">
-                        <img src="https://developers.google.com/static/community/images/accelerators_720.png" alt="Illustration of Google Developer Groups"
-                            class="mx-auto mb-4 py-8">
-                    </div>
-                   <div class="px-6 py-2">
+            </div>
+            <div class="rounded-lg shadow-lg bg-white hover-scale" data-aos="fade-up" data-aos-delay="50">
+                <div class="bg-pink-100">
+                    <img src="https://developers.google.com/static/community/images/accelerators_720.png" alt="Illustration of Google Developer Groups" class="mx-auto mb-4 py-8">
+                </div>
+                <div class="px-6 py-2">
                     <h2 class="text-[1.1rem] font-semibold mb-2">Accelerator</h2>
                     <p class="text-gray-700 text-[0.8rem]">
                         GDGs on Campus provide learning opportunities for aspiring developers from universities and
@@ -127,14 +187,15 @@
                         seamlessly transition to a broader GDG community, continuing their learning and collaboration
                         with fellow developers.
                     </p>
-                    <button type="button" class="border-2 border-solid text-[0.8rem] text-blue-700 px-5 py-2  my-4 " >Learn More </button>
-
-                   </div>
+                    <button type="button" class="border-2 border-solid text-[0.8rem] text-blue-700 px-5 py-2  my-4 ">Learn More </button>
                 </div>
-
             </div>
         </div>
+    </div>
 
+    
+
+  
         <!-- ----------- About to community end   -------------------  -->
 
 
@@ -148,8 +209,9 @@
                     </div>
                     <h2 class="font-semibold text-lg">YouTube</h2>
                     <p class="text-gray-600 mb-4">Subscribe to join a community of creative developers and learn the latest in Google technology.</p>
+                    <a href="https://www.youtube.com/@GoogleDevelopers/playlists">
                     <button type="button" class="border-2 border-solid text-[0.8rem] text-blue-700 px-5 py-2  my-4 " >Learn More </button>
-
+                </a>
                 </div>
                 
                 <div class="bg-white rounded-lg shadow p-5 text-center shadow-lg " data-aos="fade-up" data-aos-delay="50" data-aos-duration="800">
@@ -158,7 +220,8 @@
                     </div>
                     <h2 class="font-semibold text-lg">Instagram</h2>
                     <p class="text-gray-600 mb-4">Follow and discover developer resources, community events, and inspirational stories.</p>
-                    <button type="button" class="border-2 border-solid text-[0.8rem] text-blue-700 px-5 py-2  my-4 " >Learn More </button>
+                    <a href="https://www.instagram.com/googledevelopers/">
+                    <button type="button" class="border-2 border-solid text-[0.8rem] text-blue-700 px-5 py-2  my-4 " >Learn More </button></a>
 
                 </div>
                 
@@ -168,7 +231,8 @@
                     </div>
                     <h2 class="font-semibold text-lg">LinkedIn</h2>
                     <p class="text-gray-600 mb-4">Join a community of creative developers and learn how to use the latest in technology.</p>
-                    <button type="button" class="border-2 border-solid text-[0.8rem] text-blue-700 px-5 py-2  my-4 " >Learn More </button>
+                    <a href="https://www.linkedin.com/company/google-developers/">
+                    <button type="button" class="border-2 border-solid text-[0.8rem] text-blue-700 px-5 py-2  my-4 " >Learn More </button></a>
 
                 </div>
                 
@@ -178,17 +242,43 @@
                     </div>
                     <h2 class="font-semibold text-lg">X</h2>
                     <p class="text-gray-600 mb-4">Join the conversation to discover the latest developer tools, resources, events, and announcements.</p>
-                    <button type="button" class="border-2 border-solid text-[0.8rem] text-blue-700 px-5 py-2  my-4 " >Learn More </button>
+                    <a href="https://twitter.com/GoogleDevelopers">
+                    <button type="button" class="border-2 border-solid text-[0.8rem] text-blue-700 px-5 py-2  my-4 " >Learn More </button></a>
 
                 </div>
             </div>
         </div>
 
-    </body>
+        <!-- Footer Section -->
+        <footer class="bg-gray-100 py-8 mt-10">
+            <div class="container mx-auto px-9">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <!-- GDSC Logo and Name -->
+                    <div class="flex items-center mb-4 md:mb-0">
+                        <!-- <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_Developers_logo.svg/2560px-Google_Developers_logo.svg.png"  -->
+                             
+                        <div>
+                            <h3 class="font-bold text-gray-800">Google Developer Student Clubs</h3>
+                            <p class="text-sm text-gray-600">IET DAVV, Indore</p>
+                        </div>
+                    </div>
 
-    </html>
+                    <!-- Quick Links -->
+                    <div class="flex flex-wrap justify-center gap-6">
+                        <a href="#" class="text-gray-600 hover:text-blue-500">About Us</a>
+                        <a href="#" class="text-gray-600 hover:text-blue-500">Events</a>
+                        <a href="#" class="text-gray-600 hover:text-blue-500">Team</a>
+                        <a href="#" class="text-gray-600 hover:text-blue-500">Contact</a>
+                    </div>
+                </div>
+                
+                <div class="mt-6 text-center">
+                    <p class="text-sm text-gray-500">© 2024 Google Developer Student Clubs - IET DAVV. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
 
-    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+        <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <!-- Animation Script  -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
